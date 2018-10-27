@@ -2,6 +2,7 @@ package com.dshock.medicalrecordscanner
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         records.apply {
             setHasFixedSize(true)
             adapter = RecordAdapter()
+            layoutManager = LinearLayoutManager(context)
         }
     }
 }
