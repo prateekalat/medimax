@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         records.apply {
             setHasFixedSize(true)
-            adapter = RecordAdapter()
+            adapter = RecordAdapter(this@MainActivity)
             layoutManager = LinearLayoutManager(context)
         }
     }

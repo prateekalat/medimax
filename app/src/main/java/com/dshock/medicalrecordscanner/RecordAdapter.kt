@@ -1,13 +1,15 @@
 package com.dshock.medicalrecordscanner
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 
-class RecordAdapter : RecyclerView.Adapter<RecordAdapter.ViewHolder>() {
+class RecordAdapter(val activity: AppCompatActivity) : RecyclerView.Adapter<RecordAdapter.ViewHolder>() {
 
     private val records = listOf(
             Record(
@@ -29,6 +31,10 @@ class RecordAdapter : RecyclerView.Adapter<RecordAdapter.ViewHolder>() {
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(record = records[position])
+
+        holder.itemView.setOnClickListener {
+            activity.startActivity(Intent(activity, RecordActivity::class.java))
+        }
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

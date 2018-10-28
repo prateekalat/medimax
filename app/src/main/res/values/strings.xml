@@ -2,4 +2,5 @@
     <string name="app_name">MediMax</string>
     <string name="scan_document">Scan Document</string>
     <string name="scan">scan</string>
+    <string name="at_risk">At risk</string>
 </resources>
