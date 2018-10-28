@@ -36,5 +36,5 @@ dependencies {
     implementation 'com.camerakit:camerakit:1.0.0-beta3.9'
     implementation 'com.camerakit:jpegkit:0.1.0'
     implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
-
+    implementation 'com.google.android.material:material:1.0.0'
 }

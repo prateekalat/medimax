@@ -2,4 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="@string/scan_document"
         android:id="@+id/scan" />
+    <item android:title="@string/add_manually"
+        android:id="@+id/add_manually" />
 </menu>

@@ -3,4 +3,9 @@
     <string name="scan_document">Scan Document</string>
     <string name="scan">scan</string>
     <string name="at_risk">At risk</string>
+    <string name="add_manually">Add Manually</string>
+    <string name="resting_blood_pressure">Resting Blood Pressure</string>
+    <string name="age">Age</string>
+    <string name="cholestrol_mg_dl">Cholestrol (mg / dl)</string>
+    <string name="gender">Gender</string>
 </resources>

@@ -34,6 +34,11 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this, CameraActivity::class.java)
                 startActivity(intent)
             }
+
+            R.id.add_manually -> {
+                val intent = Intent(this, AddRecordActivity::class.java)
+                startActivity(intent)
+            }
         }
 
         return true
